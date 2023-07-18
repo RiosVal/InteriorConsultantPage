@@ -1,0 +1,319 @@
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 50px 100px;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
+.content {
+    display: flex;
+}
+
+button {
+    background-color: black;
+    border: none;
+}
+
+#closeButton {
+    position: relative;
+    top: -190px;
+    left: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 30px 30px 0 0;
+}
+
+
+/*---------------------------------Nav styling---------------------------------*/
+nav {
+    overflow: hidden; /* Limpiamos el float para que el contenedor se ajuste al contenido interno */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 20vh; /* Ajusta este valor para centrar verticalmente el contenido */
+}
+
+
+/*---------------------------------Logo styling---------------------------------*/
+.logo {
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    width: 102px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    float: left;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.link:hover {
+    border-bottom: solid white 1px;
+}
+
+
+
+
+
+/*-------------------------Left part styling-------------------------*/
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    width: 365px;
+    height: 61px;
+    font-weight: 500;
+}
+
+.left-part p {
+    width: 410px;
+    height: 145px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.left-part a{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.left-part a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*------------------------Right part styling------------------------*/
+.right-part {
+    margin-left: auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+#superimposed {
+    width: 737px;
+    height: 664px;
+}
+
+#interior-img {
+    width: 737px;
+    height: 555px;
+}
+/*------------------------Aliza box styling------------------------*/
+.aliza-box {
+    width: 410px;
+    height: 189px;
+    background-color: black;
+    padding: 10px 20px;
+    position: relative;
+    left: 250px;
+    bottom: 100px;
+    box-shadow: 0px 4px 4px 0px #44434340;
+
+}
+
+.upper-box {
+    display: flex;
+    gap: 20px;
+}
+
+.upper-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#text1 {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+}
+
+#text2 {
+    font-weight: 500;
+    font-size: 12px;
+    color: #828282;
+    margin-top: 6px;
+}
+
+#text3 {
+    width: 287px;
+    height: 62px;  
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+
+
+/*------------------------Footer styling------------------------*/
+footer {
+    height: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px){
+    body {
+        height: 90vh;
+        background-color: black;
+        color: white;
+        margin: 20px 40px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    button.hidden {
+        display: block;
+        margin-left: auto;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .left-part {
+        display: block;
+    }
+
+    h1{
+        width: 276px;
+        height: 46px;
+        font-size: 36px;
+        line-height: 46.04px
+    }
+
+    .left-part p{
+        width: 250px;
+        height: 85px;
+        font-size: 14px;
+    }
+
+    .left-part a{
+        width: 80px;
+        height: 17px;
+        font-size: 14px;
+    }
+
+    .right-part {
+        margin-left: auto;
+        height: 50vh;
+    }
+
+    #superimposed {
+        width: 300px;
+        height: 347.32px;
+    }
+
+    #interior-img {
+        width: 351px;
+        height: 264.32px;
+    }
+
+    /*------------------------Aliza box styling------------------------*/
+    .aliza-box {
+        width: 270px;
+        height: 138px;
+        background-color: black;
+        padding: 7px 17px;
+        position: relative; /*change*/
+        left: 35px;    /*change*/
+        bottom: 55px;     /*change*/ 
+    }
+    
+    .upper-box {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .upper-box img {
+        width: 36.59px;
+        height: 36.59px;
+        border-radius: 50%;
+    }
+    
+    #text1 {
+        font-weight: 500;
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    #text2 {
+        font-weight: 500;
+        font-size: 10px;
+        color: #828282;
+        margin-top: 6px;
+    }
+    
+    #text3 {
+        width: 287px;
+        height: 62px;  
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    footer {
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    
+
+}

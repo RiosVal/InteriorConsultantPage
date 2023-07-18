@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Crimson Pro font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!--Montserrat font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Lora font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="logo">THIS INTERIOR</div>
+        <div class="menu">
+            <button id="toggleButton" class="hidden"><img src="./Images/menu.png" alt=""></button>
+            <div class="navbar">
+                <a href="./SecundaryPages/home.html" class="link montserrat" style="font-weight: 700;">Home</a>
+                <a href="./SecundaryPages/collection.html" class="link montserrat">Collection</a>
+                <a href="./SecundaryPages/about.html" class="link montserrat">About</a>
+                <a href="./SecundaryPages/contact.html" class="link montserrat">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-mobile hidden">
+        <ul>
+            <li><button id="closeButton"><img src="./Images/closeButton.png" alt="" width="25px"></button></li>
+            <li><a href="./SecundaryPages/home.html" class="link montserrat" style="font-weight: 700;">Home</a></li>
+            <li><a href="./SecundaryPages/collection.html" class="link montserrat">Collection</a></li>
+            <li><a href="./SecundaryPages/about.html" class="link montserrat">About</a></li>
+            <li><a href="./SecundaryPages/contact.html" class="link montserrat">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="left-part">
+            <h1 class="lora">Modern Interior</h1>
+            <p class="montserrat">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+            <a class="montserrat" href="./SecundaryPages/collection.html">Read more <img src="./Images/leftArrow.png" width="15px"></a>
+        </div>
+
+
+        <div class="right-part">
+            <div id="superimposed">
+                <img id="interior-img" src="./Images/photo1.png">
+                <div class="aliza-box">
+                    <div class="upper-box">
+                        <img src="./Images/photo2.png" alt="">
+                        <div>
+                            <p id="text1" class="montserrat">Aliza Webber</p>
+                            <p id="text2" class="montserrat">Interior designer</p>
+                        </div>
+                    </div>
+                    <p id="text3" class="lora">Designed in 2020 by Aliza Webber</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="montserrat">Created by <b>RiosVal</b> - devchallenges.io</footer>
+
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const closeButton = document.getElementById('closeButton');
+        const nav = document.querySelector('.navbar-mobile');
+
+        toggleButton.addEventListener('click', function() {
+            nav.classList.toggle('hidden');
+        });
+
+        closeButton.addEventListener('click', function() {
+            nav.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
